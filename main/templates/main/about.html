@@ -5,20 +5,19 @@
             <div class="col-lg-6">
                 <div class="about-avatar">
                     {% load static %}
-                    <img src="{% static 'profile_pic.jpg' %}" title="" alt="" />
+                    <img src="{% static 'profile_pic.jpeg' %}" height="100%" width="100%"/>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="about-text go-to">
                     <h2 class="dark-color">About Carlos Kosala</h2>
                     <p>
-                        We at Carlos Kosala find properties and provide bridge between
-                        potential buyers and sellers.
+                        We at Carlos Kosala find properties and provide bridge between potential buyers and sellers.
                     </p>
                 </div>
                 <hr>
                 <div class="row about-list">
-                    <h4 class="dark-color">Contact Imformation</h4>
+                    <h4 class="dark-color">Contact Information</h4>
                     <div class="col-md-6">
                         <div class="media">
                             <label>Residence</label>
@@ -40,6 +39,23 @@
                         </div>
                     </div>
                 </div>
+                <hr>
+                <form>
+                    <h4 class="dark-color">Contact Information</h4>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Name</label>
+                      <input type="text" class="form-control" id="exampleInputName" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Message</label>
+                      <textarea type="text" class="form-control" id="exampleInputMessage" placeholder="Message for Carlos Kosala" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                  </form>
             </div>
         </div>
     </div>
