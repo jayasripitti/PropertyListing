@@ -1,4 +1,13 @@
 {% extends 'main/base.html' %} {% block content %}
-<h1>Welcome to My Website</h1>
-<p>This is the home page.</p>
+<h1>Featured Property</h1>
+{% load static %}
+<span class="border border-white">
+  <img
+    src="{% static 'attraction_1.jpg' %}"
+    alt="My image"
+    height="100%"
+    width="100%"
+    class="rounded"
+  />
+</span>
 {% endblock %}
