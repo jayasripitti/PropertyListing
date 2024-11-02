@@ -1,5 +1,5 @@
-{% extends 'main/base.html' %}
-{% block content %}
-<h1>About Me</h1>
-<p>Details about me.</p>
+{% extends 'main/base.html' %} {% block content %}
+<h1>Featured Property</h1>
+{% load static %}
+<img src="{% static 'attractions/image1.jpg' %}" alt="My image" />
 {% endblock %}
