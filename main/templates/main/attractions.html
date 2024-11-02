@@ -1,5 +1,48 @@
-{% extends 'main/base.html' %}
-{% block content %}
-<h1>Nearby Attractions</h1>
-<p>Information about nearby attractions.</p>
+{% extends 'main/base.html' %} {% block content %}
+{% load static %}
+<div class="container">
+    <div class="card text-dark bg-light border-dark">
+        <div class="row">
+            <div class="col">
+                <img class="d-block w-100" src="{% static 'attractions/downtown.avif' %}" alt="Downtown" />
+            </div>
+            <div class="col">
+                <div class="card-body">
+                    <h5 class="card-title">Omaha Downtown</h5>
+                    <p class="card-text">The city’s business and culture hub, Downtown centers on cobblestone Old
+                        Market, with galleries, restaurants, and boutiques in Victorian buildings. Joslyn Art Museum
+                        shows European and American masters, and Durham Museum explores regional history, both in grand,
+                        art deco halls.
+                    </p>
+                    <a href="#" class="btn btn-dark">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="card col-xl text-dark bg-light border-dark">
+            <img class="d-block w-100 rounded" src="{% static 'attractions/zoo.avif' %}"
+                alt="Henry Doorly Zoo and Aquarium" />
+            <div class="card-body">
+                <h5 class="card-title">Henry Doorly Zoo and Aquarium</h5>
+                <p class="card-text">Omaha's Henry Doorly Zoo and Aquarium is a zoo in Omaha, Nebraska. It is accredited
+                    by the Association of Zoos and Aquariums and a member of the World Association of Zoos and Aquariums
+                </p>
+                <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+        </div>
+        <div class="card col-xl text-dark bg-light border-dark">
+            <img class="d-block w-100 rounded" src="{% static 'attractions/market.avif' %}" alt="The Old Market" />
+            <div class="card-body">
+                <h5 class="card-title">The Old Market</h5>
+                <p class="card-text">The Old Market is a neighborhood located in downtown Omaha, Nebraska, United
+                    States, and is bordered by South 10th Street to the east, 13th Street to the west, Farnam Street to
+                    the north and Jackson Street to the South</p>
+                <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 {% endblock %}
