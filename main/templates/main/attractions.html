@@ -1,23 +1,23 @@
-{% extends 'main/base.html' %} {% block content %}
+{% extends 'main/base.html' %}
+{% block content %}
 {% load static %}
 <div class="container">
     <br>
     <div class="row">
         <div class="card col-xl text-dark bg-light border-dark">
-            <img class="d-block w-100 rounded" src="{% static 'attractions/downtown.avif' %}"
-                alt="Omaha Downtown" />
+            <img class="d-block w-100 rounded" src="{% static 'attractions/downtown.jpg' %}" alt="Omaha Downtown" />
             <div class="card-body">
                 <h5 class="card-title">Omaha Downtown</h5>
                 <p class="card-text">The city’s business and culture hub, Downtown centers on cobblestone Old
-                        Market, with galleries, restaurants, and boutiques in Victorian buildings. Joslyn Art Museum
-                        shows European and American masters, and Durham Museum explores regional history, both in grand,
-                        art deco halls.
+                    Market, with galleries, restaurants, and boutiques in Victorian buildings. Joslyn Art Museum
+                    shows European and American masters, and Durham Museum explores regional history, both in grand,
+                    art deco halls.
                 </p>
                 <a href="#" class="btn btn-dark">Read More</a>
             </div>
         </div>
         <div class="card col-xl text-dark bg-light border-dark">
-            <img class="d-block w-100 rounded" src="{% static 'attractions/market.avif' %}" alt="The Old Market" />
+            <img class="d-block w-100 rounded" src="{% static 'attractions/market.jpg' %}" alt="The Old Market" />
             <div class="card-body">
                 <h5 class="card-title">The Old Market</h5>
                 <p class="card-text">The Old Market is a neighborhood located in downtown Omaha, Nebraska, United
@@ -27,9 +27,10 @@
             </div>
         </div>
     </div>
+    <br>
     <div class="row">
         <div class="card col-xl text-dark bg-light border-dark">
-            <img class="d-block w-100 rounded" src="{% static 'attractions/zoo.avif' %}"
+            <img class="d-block w-100 rounded" src="{% static 'attractions/zoo.jpg' %}"
                 alt="Henry Doorly Zoo and Aquarium" />
             <div class="card-body">
                 <h5 class="card-title">Henry Doorly Zoo and Aquarium</h5>
@@ -40,10 +41,12 @@
             </div>
         </div>
         <div class="card col-xl text-dark bg-light border-dark">
-            <img class="d-block w-100 rounded" src="{% static 'attractions/attractionmuseum.jpg' %}" alt="The Old Market" />
+            <img class="d-block w-100 rounded" src="{% static 'attractions/museum.jpg' %}"
+                alt="The Old Market" />
             <div class="card-body">
                 <h5 class="card-title">Omaha Museums</h5>
-                <p class="card-text">Filled with history, science and art, Omaha museums are as diverse as they are beautiful.</p>
+                <p class="card-text">Filled with history, science and art, Omaha museums are as diverse as they are
+                    beautiful.</p>
                 <a href="#" class="btn btn-dark">Read More</a>
             </div>
         </div>
