@@ -1,0 +1,98 @@
+{% extends 'main/base.html' %}
+{% block content %}
+{% load static %}
+<h1 class="p-3">Property Listings</h1>
+
+<div class="row bg-secondary-subtle rounded">
+    <h4 class="p-3 text-dark">Filter Properties</h4>
+    <div class="col p-3">
+        <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Filter Property Type
+            </button>
+        </div>
+    </div>
+    <div class="col p-3">
+        <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Filter Neighbourhood
+            </button>
+        </div>
+    </div>
+    <div class="col p-3">
+        <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Filter Price Range
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<br>
+
+<div class="card-group">
+    <div class="card text-dark bg-light border-dark">
+        <img class="d-block" src="{% static 'properties/property_1.jpeg' %}" alt="Serene Country Retreat"/>
+        <div class="card-body">
+            <h5 class="card-title">Serene Country Retreat</h5>
+            <p class="card-text">Experience ultimate retreat in this picturesque country house with lake views, spacious
+                porch, rustic-modern interior, private dock/boat lift, expansive gardens/trails, and 4 beds, 3 baths,
+                2-car garage</p>
+            <a href="#" class="btn btn-dark">Check Property</a>
+        </div>
+    </div>
+    <div class="card text-dark bg-light border-dark">
+        <img class="d-block w-100" src="{% static 'properties/property_2.jpeg' %}" alt="Sleek Modern Oasis" />
+        <div class="card-body">
+            <h5 class="card-title">Sleek Modern Oasis</h5>
+            <p class="card-text">This sleek metallic modern home boasts clean lines, industrial-chic flair, and
+                expansive glass. Inside, open-plan living blends functionality with minimalist chic, creating a serene
+                atmosphere. A perfect blend of simplicity and luxury.</p>
+            <a href="#" class="btn btn-dark">Check Property</a>
+        </div>
+    </div>
+    <div class="card text-dark bg-light border-dark">
+        <img class="d-block w-100" src="{% static 'properties/property_3.jpeg' %}" alt="Panoramic Hillside Villa" />
+        <div class="card-body">
+            <h5 class="card-title">Panoramic Hillside Villa</h5>
+            <p class="card-text">Multi-storied villa with stunning hill views, ample parking, modern amenities, and
+                private balconies. Luxury meets serenity</p>
+            <a href="#" class="btn btn-dark">Check Property</a>
+        </div>
+    </div>
+</div>
+<br>
+<div class="card-group">
+    <div class="card text-dark bg-light border-dark">
+        <img class="d-block w-100" src="{% static 'properties/property_4.jpeg' %}" alt="Grand Estate Villa" />
+        <div class="card-body">
+            <h5 class="card-title">Grand Estate Villa</h5>
+            <p class="card-text">Lavish 7-bedroom boxy villa with 12-car parking, modern finishes, private balconies,
+                and luxurious amenities. Epicurean living</p>
+            <a href="#" class="btn btn-dark">Check Property</a>
+        </div>
+    </div>
+    <div class="card text-dark bg-light border-dark">
+        <img class="d-block w-100" src="{% static 'properties/property_5.jpeg' %}" alt="Cozy Urban Oasis" />
+        <div class="card-body">
+            <h5 class="card-title">Cozy Urban Oasis</h5>
+            <p class="card-text">Charming 1-2 bedroom apartment. Modern, efficient, and affordable. Prime location.
+                Perfect for singles, couples, and first-time buyers.</p>
+            <a href="#" class="btn btn-dark">Check Property</a>
+        </div>
+    </div>
+    <div class="card text-dark bg-light border-dark">
+        <img class="d-block w-100" src="{% static 'properties/property_6.jpeg' %}" alt="Lakefront Masterpiece" />
+        <div class="card-body">
+            <h5 class="card-title">Lakefront Masterpiece</h5>
+            <p class="card-text">Stunning multi-story lakeview house with panoramic views, private dock, gourmet
+                kitchen, and modern finishes. Serene luxury living</p>
+            <a href="#" class="btn btn-dark">Check Property</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

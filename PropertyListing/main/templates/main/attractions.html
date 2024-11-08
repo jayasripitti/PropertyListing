@@ -1,0 +1,56 @@
+{% extends 'main/base.html' %}
+{% block content %}
+{% load static %}
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="card col-xl text-dark bg-light border-dark">
+            <img class="d-block w-100 rounded" src="{% static 'attractions/downtown.jpg' %}" alt="Omaha Downtown" />
+            <div class="card-body">
+                <h5 class="card-title">Omaha Downtown</h5>
+                <p class="card-text">The city’s business and culture hub, Downtown centers on cobblestone Old
+                    Market, with galleries, restaurants, and boutiques in Victorian buildings. Joslyn Art Museum
+                    shows European and American masters, and Durham Museum explores regional history, both in grand,
+                    art deco halls.
+                </p>
+                <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+        </div>
+        <div class="card col-xl text-dark bg-light border-dark">
+            <img class="d-block w-100 rounded" src="{% static 'attractions/market.jpg' %}" alt="The Old Market" />
+            <div class="card-body">
+                <h5 class="card-title">The Old Market</h5>
+                <p class="card-text">The Old Market is a neighborhood located in downtown Omaha, Nebraska, United
+                    States, and is bordered by South 10th Street to the east, 13th Street to the west, Farnam Street to
+                    the north and Jackson Street to the South</p>
+                <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="card col-xl text-dark bg-light border-dark">
+            <img class="d-block w-100 rounded" src="{% static 'attractions/zoo.jpg' %}"
+                alt="Henry Doorly Zoo and Aquarium" />
+            <div class="card-body">
+                <h5 class="card-title">Henry Doorly Zoo and Aquarium</h5>
+                <p class="card-text">Omaha's Henry Doorly Zoo and Aquarium is a zoo in Omaha, Nebraska. It is accredited
+                    by the Association of Zoos and Aquariums and a member of the World Association of Zoos and Aquariums
+                </p>
+                <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+        </div>
+        <div class="card col-xl text-dark bg-light border-dark">
+            <img class="d-block w-100 rounded" src="{% static 'attractions/museum.jpg' %}"
+                alt="The Old Market" />
+            <div class="card-body">
+                <h5 class="card-title">Omaha Museums</h5>
+                <p class="card-text">Filled with history, science and art, Omaha museums are as diverse as they are
+                    beautiful.</p>
+                <a href="#" class="btn btn-dark">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
