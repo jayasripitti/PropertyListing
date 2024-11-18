@@ -1,4 +1,3 @@
-# main/views.py
 from django.shortcuts import render
 
 
@@ -18,5 +17,5 @@ def attractions(request):
     return render(request, 'main/attractions.html', {'nbar': 'attractions'})
 
 
-def login(request):
-    return render(request, 'main/login.html', {'nbar': 'login'})
+def admin(request):
+    return render(request, 'main/admin_dashboard.html', {'nbar': 'admin_dashboard'})
